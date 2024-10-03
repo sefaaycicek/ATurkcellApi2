@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DCF9411A2CAE75D300B8C12D /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DCF941192CAE75D300B8C12D /* RxAlamofire */; };
+		DCF9411D2CAE768400B8C12D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DCF9411C2CAE768400B8C12D /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DCF941002CAE74EF00B8C12D /* ATurkcellApi2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATurkcellApi2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF9411D2CAE768400B8C12D /* Kingfisher in Frameworks */,
+				DCF9411A2CAE75D300B8C12D /* RxAlamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = ATurkcellApi2;
 			packageProductDependencies = (
+				DCF941192CAE75D300B8C12D /* RxAlamofire */,
+				DCF9411C2CAE768400B8C12D /* Kingfisher */,
 			);
 			productName = ATurkcellApi2;
 			productReference = DCF941002CAE74EF00B8C12D /* ATurkcellApi2.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = DCF940F72CAE74EF00B8C12D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DCF941182CAE75D300B8C12D /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				DCF9411B2CAE768400B8C12D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DCF941012CAE74EF00B8C12D /* Products */;
 			projectDirPath = "";
@@ -335,6 +348,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCF941182CAE75D300B8C12D /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.2;
+			};
+		};
+		DCF9411B2CAE768400B8C12D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCF941192CAE75D300B8C12D /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCF941182CAE75D300B8C12D /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		DCF9411C2CAE768400B8C12D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCF9411B2CAE768400B8C12D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCF940F82CAE74EF00B8C12D /* Project object */;
 }
